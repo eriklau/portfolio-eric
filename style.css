@@ -75,3 +75,58 @@ span {
     font-size: 3em;
     display: none;
 }
+section {
+    min-height: 100vh;
+    padding: 5% 15%;
+}
+#home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    color: white;
+}
+#home img {
+    width: 18vw;
+    border-radius: 50%;
+    margin-top: 3em;
+}
+.info-box {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5em;
+    max-width: 600px;
+}
+.info-box h1 {
+    font-size: 5em;
+    font-weight: 500;
+}
+.info-box h3 {
+    font-size: 2em;
+    font-weight: 400;
+}
+.info-box {
+    opacity: 0.7;
+}
+.btn-box {
+    display: flex;
+    gap: 1em;
+}
+.btn-box .btn:nth-of-type(1) {
+    background-color: white;
+    color: var(--background);
+}
+.btn-box .btn:nth-of-type(1):hover {
+    background-color: var(--background);
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 20px;
+    background-color: var(--background);
+}
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, #374EE1, #8E32CB);
+}
