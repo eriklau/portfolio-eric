@@ -184,3 +184,43 @@ section {
 .about-box h2 {
     font-size: 2.5em;
 }
+#services {
+    background-color: var(--background);
+}
+.header {
+    text-align: center;
+    font-size: 5em;
+    margin: 0.5em 0;
+}
+.services-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2em;
+}
+.box {
+    border: 3px solid rgb(49, 49, 49);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: cover;
+    padding: 2em;
+    gap: 2em;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+.box:hover {
+    border: 3px solid rgb(100, 100, 100);
+}
+.box p {
+    opacity: 0.8;
+}
+.box h1 {
+    font-size: 2em;
+}
+.box img {
+    min-width: 25px;
+    border-radius: 0.5em;
+}
