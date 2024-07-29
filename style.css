@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins';
+}
+:root {
+    --background: rgb(24,24,24);
+    --second-background: rgb(21,21,21);
+}
+body {
+    min-height: 100vh;
+    background-color: var(--background);
+}
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding: 2em 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(15, 15, 15, 0.8);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+}
+ul {
+    display: flex;
+    align-items: center;
+    gap: 3em;
+}
+nav ul a {
+    color: white;
+    opacity: 0.7;
+    transition: 0.2s ease-in-out;
+}
+nav ul a:hover {
+    opacity: 1;
+}
+.logo {
+    font-size: 2em;
+    color: white;
+    font-weight: 800;
+    opacity: 0.8;
+    transition: 0.2s ease-in-out;
+}
+.logo:hover {
+    opacity: 1;
+}
+.btn {
+    padding: 0.5em 1em;
+    color: white;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out
+}
+.btn-hover {
+    background-color: white;
+    color: var(--background);
+}
+span {
+    background: linear-gradient(to right, #374EE1, #8E32CB);
+    background-clip: text;
+    color: transparent;
+}
+#menu {
+    color: white;
+    font-size: 3em;
+    display: none;
+}
