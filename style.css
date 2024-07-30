@@ -139,7 +139,23 @@ section {
 }
 #about img {
     width: 30vw;
+    height: auto;
     border-radius: 1em;
+    margin-left: auto;
+}
+
+.about-info-top-block {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2em;
+}
+
+.about-info-top-block img {
+    width: 30vw;
+    height: 10vh;
+    align-self: flex-end;
 }
 .about-box {
     display: flex;
@@ -149,10 +165,12 @@ section {
 }
 .about-box h1 {
     font-size: 5em;
+    margin-bottom: 1em;
 }
 .about-box p {
     color: white;
     opacity: 0.8;
+    margin-bottom: 2em;
 }
 .skills {
     display: flex;
@@ -160,8 +178,8 @@ section {
     gap: 10em;
 }
 .skills ul {
-    font-size: 1.1em;
-    font-weight: 500;
+    font-size: 1em;
+    font-weight: 800;
     display: flex;
     flex-direction: column;
     color: white;
@@ -171,8 +189,8 @@ section {
 .skills ul li span {
     display: flex;
     align-items: center;
-    gap: 0.5em;
-    font-size: 1.3em;
+    gap: 0.2em;
+    font-size: 1.1em;
     transition: 0.3s ease-in-out;
 }
 .skills ul li span:hover {
@@ -202,7 +220,7 @@ section {
     border-radius: 0.5em;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     overflow: hidden;
     object-fit: cover;
     padding: 2em;
@@ -210,24 +228,37 @@ section {
     color: white;
     cursor: pointer;
     transition: 0.3s ease-in-out;
+    height: 100%;
 }
 .box:hover {
     border: 3px solid rgb(100, 100, 100);
 }
 .box p {
     opacity: 0.8;
+    margin-bottom: auto;
 }
 .box h1 {
     font-size: 2em;
+    margin-top: 0;
 }
 .box img {
-    min-width: 25px;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
     border-radius: 0.5em;
 }
 
 #contact {
     background-color: var(--second-background);
+    text-align: center;
+    padding: 5em 15%;
 }
+
+#contact .header {
+    font-size: 5em;
+    margin-bottom: 1em;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -235,73 +266,93 @@ form {
     justify-content: center;
     gap: 2em;
 }
+
 form .input-box {
     display: flex;
     flex-direction: column;
-    align-items: baseline;
-    gap: 1em;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 600px;
 }
+
 .input-box span {
     font-size: 1.3em;
-    padding: 1em 5em;
+    color: #32cb82;
+    margin-bottom: 0.5em;
+}
+
+.input-box input, .input-box textarea {
+    padding: 1em 2em;
     border-radius: 0.5em;
     border: none;
     outline: none;
+    width: 100%;
+    font-size: 1.1em;
 }
-form input:focus {
+.input-box textarea {
+    height: 150px; /* Set height for textarea */
+    resize: vertical; /* Allow vertical resizing */
+}
+form input:focus, form textarea:focus {
     background: rgb(229, 229, 229);
+}
+form .btn {
+    padding: 0.5em 2em;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    font-size: 1.1em;
+    border: 2px solid white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
 }
 
 footer {
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    gap: 10em;
-    bottom: 0;
+    gap: 1em;
     background-color: var(--background);
     width: 100%;
-    padding: 5em 15%;
+    padding: 2em 15%;
 }
-.col-left {
+
+footer .contact-info {
     display: flex;
-    flex-direction: column;
-    gap: 1em;
+    justify-content: space-around;
+    width: 100%;
+    color: white;
 }
-.col-box {
+
+footer .contact-info .col-box {
     display: flex;
     align-items: center;
-    gap: 1em;
+    gap: 0.5em;
 }
-.col-box i {
+
+footer .contact-info .col-box i {
     font-size: 2em;
 }
-.col-box span {
+
+footer .contact-info .col-box span {
     font-size: 1.2em;
 }
 
-.col-right {
+footer .social-icons {
     display: flex;
-    flex-direction: column;
     gap: 1em;
-    color: white;
-    max-width: 500px;
-}
-.col-right span {
-    font-size: 1.3em;
-}
-.col-box .social-icons {
-    display: flex;
-    align-items: baseline;
-    justify-content: left;
-    gap: 1em;
-}
-.col-right .social-icons {
     font-size: 2em;
-    transition: 0.2 ease-in-out;
+    transition: 0.2s ease-in-out;
     cursor: pointer;
-}
-.social-icons i:hover {
     color: white;
+    margin-top: auto;
+}
+
+footer .social-icons i:hover {
+    color: var(white);
 }
 
 @media(max-width:968px) {
