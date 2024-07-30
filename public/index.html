@@ -215,25 +215,25 @@
     <section id="contact">
         <h1 class="header"><span>Contact</span></h1>
     
-        <form action="#">
+        <form id="contact-form">
             <div class="input-box">
                 <span>Full Name</span>
-                <input type="text" placeholder="Enter Your Full Name">
+                <input type="text" name="fullname" placeholder="Enter Your Full Name" required>
             </div>
     
             <div class="input-box">
                 <span>Email</span>
-                <input type="email" placeholder="Enter Your Email">
+                <input type="email" name="email" placeholder="Enter Your Email" required>
             </div>
     
             <div class="input-box">
                 <span>Message</span>
-                <textarea placeholder="Enter Your Message"></textarea>
+                <textarea name="message" placeholder="Enter Your Message" required></textarea>
             </div>
     
-            <div class="btn">Submit</div>
+            <button type="submit" class="btn">Submit</button>
         </form>
-    </section>
+    </section>    
 
     <footer>
         <div class="contact-info">
