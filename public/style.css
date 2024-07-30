@@ -27,6 +27,9 @@ nav {
     backdrop-filter: blur(10px);
     z-index: 1000;
 }
+nav .btn:hover {
+    color: white;
+}
 ul {
     display: flex;
     align-items: center;
@@ -395,18 +398,19 @@ footer .contact-info .col-box span {
     font-size: 1.2em;
 }
 
-footer .social-icons {
-    display: flex;
-    gap: 1em;
-    font-size: 2em;
-    transition: 0.2s ease-in-out;
-    cursor: pointer;
+.social-icons a {
     color: white;
-    margin-top: auto;
+    font-size: 2em;
+    transition: color 0.3s ease-in-out;
 }
 
-footer .social-icons i:hover {
-    color: var(white);
+.social-icons a:hover {
+    color: #8E32CB;
+}
+
+.btn:hover {
+    background-color: white; /* Change background to white on hover */
+    color: var(--background); /* Change text color to background color on hover */
 }
 
 @media(max-width:968px) {
