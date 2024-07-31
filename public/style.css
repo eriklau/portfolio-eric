@@ -263,7 +263,7 @@ section {
 
 .projects-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Set to 3 columns */
+    grid-template-columns: repeat(3, 1fr);
     gap: 2em;
 }
 
@@ -409,8 +409,8 @@ footer .contact-info .col-box span {
 }
 
 .btn:hover {
-    background-color: white; /* Change background to white on hover */
-    color: var(--background); /* Change text color to background color on hover */
+    background-color: white;
+    color: var(--background);
 }
 
 @media(max-width:968px) {
