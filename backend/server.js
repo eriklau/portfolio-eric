@@ -10,6 +10,11 @@ const port = 3000;
 // app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.urlencoded({ extended: false }));
+
+app.get('/', (req, res) => {
+    res.send('Welcome to the backend! This server only handles API requests.');
+});
+
 app.use(bodyParser.json());
 
 app.post('/contact', (req, res) => {
