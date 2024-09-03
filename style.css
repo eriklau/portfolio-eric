@@ -141,7 +141,7 @@ section {
     gap: 5em;
 }
 #about img {
-    width: 30vw;
+    width: 26vw;
     height: auto;
     border-radius: 1em;
     margin-left: auto;
@@ -168,7 +168,7 @@ section {
 }
 .about-box h2 {
     font-size: 5em;
-    margin-bottom: 3em;
+    margin-bottom: 0.5em;
 }
 .about-box p {
     color: white;
@@ -208,6 +208,17 @@ section {
 #services {
     background-color: var(--background);
 }
+#services h2 {
+    text-align: center;
+    font-size: 3em;
+    margin-bottom: 1em;
+}
+#services h3 {
+    font-size: 2em;
+}
+/* #services .box {
+    text-align: center;
+} */
 .header {
     text-align: center;
     font-size: 5em;
@@ -255,12 +266,17 @@ section {
     background-color: var(--second-background);
 }
 
-#projects .header {
+#projects h2 {
     text-align: center;
-    font-size: 5em;
-    margin: 0.5em 0;
+    font-size: 3em;
+    margin: 1em 0;
 }
-
+#projects h3 {
+    font-size: 2em;
+}
+#projects .box {
+    text-align: center;
+}
 .projects-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -311,8 +327,8 @@ section {
     padding: 5em 15%;
 }
 
-#contact .header {
-    font-size: 5em;
+#contact h2 {
+    font-size: 3em;
     margin-bottom: 1em;
 }
 
@@ -334,7 +350,6 @@ form .input-box {
 
 .input-box span {
     font-size: 1.3em;
-    color: #32cb82;
     margin-bottom: 0.5em;
 }
 
@@ -400,7 +415,7 @@ footer .contact-info .col-box span {
 
 .social-icons a {
     color: white;
-    font-size: 2em;
+    font-size: 1em;
     transition: color 0.3s ease-in-out;
 }
 
