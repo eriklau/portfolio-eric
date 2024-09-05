@@ -213,6 +213,7 @@ section {
 #services h2 {
     text-align: center;
     font-size: 3em;
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 #services h3 {
@@ -331,7 +332,24 @@ section {
 
 #contact h2 {
     font-size: 3em;
+    margin-top: 1em;
     margin-bottom: 1em;
+    letter-spacing: 2px;
+}
+#contact h3 {
+    padding-top: 5em;
+    color: rgb(220, 220, 220);
+}
+
+#contact h4 {
+    margin: 10px 0;
+    font-size: 18px;
+    color: #636363;
+    transition: color 0.5s ease-in-out;
+}
+
+#contact h4:hover {
+    color: #9f9f9f;
 }
 
 form {
@@ -416,8 +434,8 @@ footer .contact-info .col-box span {
 }
 
 .social-icons a {
-    color: white;
-    font-size: 1em;
+    color: rgb(133, 131, 250);
+    font-size: 1.5em;
     transition: color 0.3s ease-in-out;
 }
 
